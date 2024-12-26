@@ -1,6 +1,5 @@
 local opt = vim.opt
 
-
 -- 行号
 opt.relativenumber = true
 opt.number = true
@@ -34,16 +33,3 @@ opt.smartcase = true
 -- 外观
 opt.termguicolors = true
 opt.signcolumn = "yes"
-
-
-
-
-
-
-
-
-
-opt.termguicolors = true
-
-
-
