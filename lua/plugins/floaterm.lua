@@ -9,8 +9,8 @@ return {
     vim.g.floaterm_opener = "edit"
     vim.g.floaterm_shell = "pwsh"
 
-    require("utils/floaterm").set_floaterm_map("<leader>e", "YAZI", "yazi") -- 打开 yazi
-    require("utils/floaterm").set_floaterm_map("<leader>t", "TERM", "") -- 打开 terminal
+    require("utils/floaterm").set_floaterm_map("<c-f>", "YAZI", "yazi") -- 打开 yazi
+    require("utils/floaterm").set_floaterm_map("<c-t>", "TERM", "") -- 打开 terminal
   end,
 }
 
