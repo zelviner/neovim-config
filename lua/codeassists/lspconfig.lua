@@ -1,5 +1,5 @@
-local lua = require("codeassists.langages.lua")
-local rust = require("codeassists.langages.rust")
+local lua = require("codeassists.languages.lua")
+local rust = require("codeassists.languages.rust")
 
 return {
   "neovim/nvim-lspconfig",
