@@ -1,6 +1,8 @@
-local M = {}
+local Rust = {}
 
-M.opt = {
+Rust.name = "rust_analyzer"
+
+Rust.opts = {
   settings = {
     ["rust-analyzer"] = {
      cargo = {
@@ -13,6 +15,6 @@ M.opt = {
  }
 }
 
-return M
+return Rust
 
 

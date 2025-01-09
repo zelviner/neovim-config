@@ -18,11 +18,14 @@ return {
      },
     })
 
+    local lspservers = require("codeassists.languages.lspservers")
+    local installed_list = {}
+    for _, server in pairs(lspservers) do
+      table.insert(installed_list, server.name)
+    end
+
     require("mason-lspconfig").setup({
-      ensure_installed = {
-        "lua_ls",
-        "rust_analyzer",
-      },
+      ensure_installed = installed_list,
       automatic_installation = true,
     })
   end,

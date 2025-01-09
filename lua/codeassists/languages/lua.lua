@@ -1,8 +1,9 @@
-local M = {}
+local Lua = {}
 
-M.opt = {
+Lua.name = "lua_ls"
+
+Lua.opts = {
   capabilities = require("cmp_nvim_lsp").default_capabilities()
 }
 
-return M
-
+return Lua
