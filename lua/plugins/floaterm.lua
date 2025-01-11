@@ -7,7 +7,16 @@ return {
     vim.g.floaterm_width = 0.8
     vim.g.floaterm_height = 0.8
     vim.g.floaterm_opener = "edit"
-    vim.g.floaterm_shell = "pwsh"
+
+    local uname = vim.loop.os_uname().sysname
+    print(vim.inspect(uname))
+    if uname == "Windows_NT" then
+      vim.g.floaterm_shell = "pwsh"
+    elseif uname == "Linux" then
+      vim.g.floaterm_shell = "fish"
+    else 
+      vim.g.floaterm_shell = "pwsh"
+    end
 
     require("utils/floaterm").set_floaterm_map("<c-f>", "YAZI", "yazi") -- 打开 yazi
     require("utils/floaterm").set_floaterm_map("<c-t>", "TERM", "") -- 打开 terminal

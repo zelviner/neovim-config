@@ -6,6 +6,6 @@ local go = require("codeassists.languages.go")
 
 table.insert(LspServers, lua)
 table.insert(LspServers, rust)
-table.insert(LspServers, go)
+-- table.insert(LspServers, go)
 
 return LspServers
