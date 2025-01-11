@@ -1,7 +1,5 @@
 local utils = require("utils/utils")
-
 local M = {}
-
 
 -- toggle 存在对应名称的窗口则 toggle, 否则新建
 function M.toggle(name, cmd)

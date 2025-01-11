@@ -6,10 +6,4 @@ return {
   config = function() 
     require("lualine").setup()
   end,
-
-  opts = {
-
-  }
-
-
 }
