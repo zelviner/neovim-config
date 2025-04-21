@@ -1,7 +1,7 @@
 local keymap = vim.keymap
 
 -- 主键
-vim.g.mapleader = " "
+vim.g.mapleader = ";"
 
 -- ---------- 正常模式 ---------- --
 keymap.set("n", "<leader>sv", "<C-w>v") -- 水平新增窗口
@@ -11,6 +11,8 @@ keymap.set("n", "<leader>nh", ":nohl<CR>") -- 取消查找高亮
 
 keymap.set("n", "H", "^") -- 行首
 keymap.set("n", "L", "$") -- 行尾
+
+keymap.set("n", "<leader>f", ":w<CR>") -- 保存文件
 
 -- ---------- 插入模式 ---------- --
 
